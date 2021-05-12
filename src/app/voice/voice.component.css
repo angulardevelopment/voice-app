@@ -67,3 +67,36 @@
   .voiceinator button:nth-of-type(1) {
     margin-right: 2%;
   }
+
+
+
+  /* another component  */
+
+  .bodyHead {
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-weight: 200;
+    font-size: 20px;
+  }
+  .btn{
+    width: 100%;
+    background: bottom;
+  }
+  .words {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+    padding: 1rem 2rem 1rem 5rem;
+  }
+
+  .words:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+  }
