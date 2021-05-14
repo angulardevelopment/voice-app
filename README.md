@@ -1,7 +1,8 @@
 # About
 
-Text to speech app
+Text to speech app - This is a simple text to speech editor..
 Speech Recognition system added
+
 # Voice
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
