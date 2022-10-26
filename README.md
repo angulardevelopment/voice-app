@@ -66,7 +66,8 @@ https://github.com/angulardevelopment/voice-app
 ## build creation and deployment
 [command](https://dashboard.heroku.com/apps/testnodeappnew)
 ## Features
-http-proxy
+Sound system- In this, on clicking given codes it will generate sound according to it.
+
 
 ## Support
 Don't Forget to bookmark/star this repo.
