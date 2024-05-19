@@ -23,6 +23,9 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 - Text to speech editor using Speech Recognition system.
 - Sound system- In this, on clicking given codes it will generate sound according to it.
 
+### useful commands to run project
+- npm run start
+
 ## Subscribe and Stay Updated!
 
 Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!
