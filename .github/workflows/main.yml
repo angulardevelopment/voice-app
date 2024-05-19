@@ -1,0 +1,29 @@
+name: Workflow Name
+run-name: Run Name - Will be shown on each run
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    name: Jobs name
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v2.3.2
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Install NPM and Build Angular Project
+        run: |  
+          npm install
+          npm run build
+      - name: Get LFTP
+        run: sudo apt install lftp
+      - name: Configure LFTP
+        run: mkdir ~/.lftp && echo "set ssl:verify-certificate false;" >> ~/.lftp/rc
+      - name: Load Secrets
+        run: echo "machine ${{ secrets.FTP_HOST }} login ${{ secrets.FTP_USER }} password ${{ secrets.FTP_PASSWORD }}" > ~/.netrc
+      - name: Upload Folder
+        run: lftp -e "mirror --parallel=100 -R ./application/dist/ ./dist/" ${{ secrets.FTP_HOST }}
