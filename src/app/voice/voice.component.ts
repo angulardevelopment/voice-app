@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+
 export interface IWindow extends Window {
   webkitSpeechRecognition: any;
   SpeechRecognition: any;
   webkitSpeechGrammarList: any;
   webkitSpeechRecognitionEvent: any;
 }
+
 @Component({
   selector: 'app-voice',
   templateUrl: './voice.component.html',
@@ -13,12 +15,9 @@ export interface IWindow extends Window {
 })
 export class VoiceComponent implements OnInit {
 
-
   constructor() { }
 
-
   ngOnInit() {
-
   const msg = new SpeechSynthesisUtterance();
   let voices = [];
   const voicesDropdown = document.querySelector('[name="voice"]');
@@ -65,7 +64,6 @@ export class VoiceComponent implements OnInit {
   }
 
 // another component
-
   speechSystem() {
       const webkitSpeechRecognition = window['webkitSpeechRecognition'];
       // const { webkitSpeechRecognition }: IWindow = this.window;
