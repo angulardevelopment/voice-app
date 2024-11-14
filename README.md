@@ -22,6 +22,7 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 ### About the app
 - Text to speech editor using Speech Recognition system.
 - Sound system- In this, on clicking given codes it will generate sound according to it.
+- github workflow is implemented here
 
 ### useful commands to run project
 - npm run start
